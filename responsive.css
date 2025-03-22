@@ -1,0 +1,110 @@
+
+  
+  /* Responsive styles */
+  @media (max-width: 425px) {
+    body {
+      background-color: hsl(148, 38%, 91%);
+      font-family: "Karla", serif;
+      font-weight: 400;
+      height: 100vh;
+      padding: 30px;
+      display: block;
+      place-items: center;
+      margin-bottom: 30px;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    form {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 0.6rem;
+      padding: 1.5rem;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .name {
+      display: block;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .name div {
+      display: block;
+      flex-direction: column;
+    }
+    input {
+      display: block;
+    }
+    #fname{
+      width: 100%;
+    }
+    #lname{
+      width: 100%;
+    }
+    #email{
+      width: 100%;
+    }
+    input:hover,
+    input:visited {
+      border: 2px solid hsl(169, 82%, 27%);
+    }
+    label {
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .email {
+      display: block;
+    }
+    .query-container {
+      margin-bottom: 1rem;
+    }
+    .query {
+      display: block;
+    }
+    .query-box {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .query-box:active,
+    .query-box:visited {
+      background-color: hsl(148, 38%, 91%);
+    }
+    .query input {
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    .message-box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    .message-box textarea {
+      border: 1px solid hsl(186, 15%, 59%);
+      border-radius: 0.3rem;
+    }
+    .clicked {
+      margin-bottom: 1rem;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .checkbox label {
+      display: inline;
+    }
+    .submit {
+      background-color: hsl(169, 82%, 27%);
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      font-weight: 700;
+      width: 100%;
+    }
+  }

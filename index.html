@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form-js</title>
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- styles -->
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="responsive.css">
+
+     <!-- google-font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <form
+        action="onyedikannaji7@gmail.com"
+        id="form"
+        method="post"
+        autocomplete="on"
+      >
+        <h1>Contact Us</h1>
+        <div class="name">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" />
+            <p id="errorMsgFirstName" class="error"></p>
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" />
+            <p id="errorMsgLastName" class="error"></p>
+          </div>
+        </div>
+        <div class="email">
+          <label>Email Address</label>
+          <input type="text" id="email" />
+          <p id="errorMsgEmail" class="error"></p>
+        </div>
+        <div class="query-container">
+            <label>Query Type</label>
+            <div class="query">
+              <div class="query-box">
+                <input type="radio" id="radio" name="clicked" />
+                <label for="radio">General Enquiry</label>
+              </div>
+              <div class="query-box">
+                <input type="radio" id="radio2" name="clicked" />
+                <label for="radio" id="color">Support Request</label>
+              </div>
+            </div>
+            <p id="errorMsgRadio" class="error"></p>
+          </div>
+          <div class="message-box">
+            <label for="message">Message</label>
+            <textarea name="" id="text" rows="5"></textarea>
+            <p id="errorMsgBox" class="error"></p>
+          </div>
+          <div class="clicked">
+            <div class="checkbox">
+              <input type="checkbox" id="clickBox" />
+              <label for="checkbox">I consent to being contacted by the team</label>
+            </div>
+            <p id="errorCheckBox" class="error"></p>
+          </div>
+          <input
+          type="submit"
+          onclick="validateSubmitButton"
+          value="Submit"
+          class="submit"
+        />
+  
+        <!-- <p>Message Sent!</p>
+        <p></p> -->
+      </form>
+  
+    
+
+
+    </main>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
