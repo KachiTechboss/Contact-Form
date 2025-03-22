@@ -28,6 +28,7 @@ body {
     gap: 1rem;
     margin-bottom: 1rem;
   }
+  
   .name div {
     display: flex;
     flex-direction: column;
